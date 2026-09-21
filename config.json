@@ -10,97 +10,129 @@
       "name": "Griddy Gang ",
       "slug": "griddy-gang",
       "owner": "espn22700673",
-      "logo": "griddy-gang.svg"
+      "logo": "griddy-gang.svg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "Hopatcong Warriors",
       "slug": "hopatcong-warriors",
       "owner": "jon_a_evans",
-      "logo": "hopatcong-warriors.jpg"
+      "logo": "hopatcong-warriors.jpg",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "\"You play to win the game\"",
       "slug": "you-play-to-win-the-game",
       "owner": "CSallie",
-      "logo": "you-play-to-win-the-game.svg"
+      "logo": "you-play-to-win-the-game.svg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "Alacrity and Abandon",
       "slug": "alacrity-and-abandon",
       "owner": "ESPNFAN3965630907",
-      "logo": "alacrity-and-abandon.png"
+      "logo": "alacrity-and-abandon.png",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "All Gas No Brake",
       "slug": "all-gas-no-brake",
       "owner": "ESPNFAN5258591030",
-      "logo": "all-gas-no-brake.svg"
+      "logo": "all-gas-no-brake.svg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "Team Booger'sFingers",
       "slug": "team-boogersfingers",
       "owner": "tinman7311701",
-      "logo": "team-boogersfingers.svg"
+      "logo": "team-boogersfingers.svg",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "Ladd Zeppelin",
       "slug": "ladd-zeppelin",
       "owner": "Fantasy2006",
-      "logo": "ladd-zeppelin.svg"
+      "logo": "ladd-zeppelin.svg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "MadCity ",
       "slug": "madcity",
       "owner": "ESPNFAN9440665251",
-      "logo": "madcity.svg"
+      "logo": "madcity.svg",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "Team HOOK",
       "slug": "team-hook",
       "owner": "Shagens23",
-      "logo": "team-hook.jpeg"
+      "logo": "team-hook.jpeg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "NFL Fantasy Football God",
       "slug": "nfl-fantasy-football-god",
       "owner": "ESPNFAN8106142773",
-      "logo": "nfl-fantasy-football-god.png"
+      "logo": "nfl-fantasy-football-god.png",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "Bird Gang ",
       "slug": "bird-gang",
       "owner": "ESPNFAN3994919101",
-      "logo": "bird-gang.svg"
+      "logo": "bird-gang.svg",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "NJ Mud Rockers",
       "slug": "nj-mud-rockers",
       "owner": "MrZee456",
-      "logo": "nj-mud-rockers.svg"
+      "logo": "nj-mud-rockers.svg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "Team THE G.O.A.T",
       "slug": "team-the-goat",
       "owner": "42SPENCER23",
-      "logo": "team-the-goat.svg"
+      "logo": "team-the-goat.svg",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "CD nutz",
       "slug": "cd-nutz",
       "owner": "jspence2313",
-      "logo": "cd-nutz.svg"
+      "logo": "cd-nutz.svg",
+      "division": "West",
+      "motto": ""
     },
     {
       "name": "Sun Warriors",
       "slug": "sun-warriors",
       "owner": "DODGER2332",
-      "logo": "sun-warriors.png"
+      "logo": "sun-warriors.png",
+      "division": "East",
+      "motto": ""
     },
     {
       "name": "Evans Island \ud83c\udfdd\ufe0f",
       "slug": "evans-island",
       "owner": "ESPNFAN0962824239",
-      "logo": "evans-island.jpg"
+      "logo": "evans-island.jpg",
+      "division": "East",
+      "motto": ""
     }
   ]
 }
