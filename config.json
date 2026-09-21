@@ -1,0 +1,90 @@
+{
+  "league_slug": "football-dodge-city",
+  "display_name": "Dodge City",
+  "sport": "football",
+  "format": "dodge-city",
+  "platform": "espn",
+  "platform_league_id": "1167070",
+  "teams": [
+    {
+      "name": "Griddy Gang ",
+      "slug": "griddy-gang",
+      "owner": "espn22700673"
+    },
+    {
+      "name": "Hopatcong Warriors",
+      "slug": "hopatcong-warriors",
+      "owner": "jon_a_evans"
+    },
+    {
+      "name": "\"You play to win the game\"",
+      "slug": "you-play-to-win-the-game",
+      "owner": "CSallie"
+    },
+    {
+      "name": "Alacrity and Abandon",
+      "slug": "alacrity-and-abandon",
+      "owner": "ESPNFAN3965630907"
+    },
+    {
+      "name": "All Gas No Brake",
+      "slug": "all-gas-no-brake",
+      "owner": "ESPNFAN5258591030"
+    },
+    {
+      "name": "Team Booger'sFingers",
+      "slug": "team-boogersfingers",
+      "owner": "tinman7311701"
+    },
+    {
+      "name": "Ladd Zeppelin",
+      "slug": "ladd-zeppelin",
+      "owner": "Fantasy2006"
+    },
+    {
+      "name": "MadCity ",
+      "slug": "madcity",
+      "owner": "ESPNFAN9440665251"
+    },
+    {
+      "name": "Team HOOK",
+      "slug": "team-hook",
+      "owner": "Shagens23"
+    },
+    {
+      "name": "NFL Fantasy Football God",
+      "slug": "nfl-fantasy-football-god",
+      "owner": "ESPNFAN8106142773"
+    },
+    {
+      "name": "Bird Gang ",
+      "slug": "bird-gang",
+      "owner": "ESPNFAN3994919101"
+    },
+    {
+      "name": "NJ Mud Rockers",
+      "slug": "nj-mud-rockers",
+      "owner": "MrZee456"
+    },
+    {
+      "name": "Team THE G.O.A.T",
+      "slug": "team-the-goat",
+      "owner": "42SPENCER23"
+    },
+    {
+      "name": "CD nutz",
+      "slug": "cd-nutz",
+      "owner": "jspence2313"
+    },
+    {
+      "name": "Sun Warriors",
+      "slug": "sun-warriors",
+      "owner": "DODGER2332"
+    },
+    {
+      "name": "Evans Island \ud83c\udfdd\ufe0f",
+      "slug": "evans-island",
+      "owner": "ESPNFAN0962824239"
+    }
+  ]
+}
