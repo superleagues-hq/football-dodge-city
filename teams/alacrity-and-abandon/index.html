@@ -69,7 +69,7 @@ body.away-light .navstrip a,body.away-light .navstrip button{color:#111111;}
 body.away-light .navstrip a.disabled,body.away-light .navstrip button.disabled{color:rgba(0,0,0,0.25);}
 body.away-light h1{color:#111111;}
 body.away-light .kicker{color:var(--secondary);}
-body.away-light .motto{color:rgba(0,0,0,0.7);}
+body.away-light 
 body.away-light .edition{color:rgba(0,0,0,0.6);}
 body.away-light .section-title{color:var(--secondary);}
 body.away-light .card{background:rgba(0,0,0,0.04);}
@@ -112,6 +112,34 @@ body.away-light .row-table tr.pos-row[data-pos="TE"] td{color:#B8860B !important
 body.away-light .row-table tr.pos-row[data-pos="K"] td{color:#6A1B9A !important;}
 body.away-light .row-table tr.pos-row[data-pos="D/ST"] td{color:#AD1457 !important;}
 /* DC OVERRIDE END */
+
+.motto{
+  font-family:'Oswald',sans-serif;
+  font-style:italic;
+  font-weight:700;
+  font-size:clamp(15px,4.2vw,18px);
+  letter-spacing:0.03em;
+  color:var(--secondary);
+  margin:16px auto 0;
+  max-width:420px;
+  padding:12px 20px;
+  line-height:1.35;
+  position:relative;
+  background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border-left:3px solid var(--secondary);
+  border-right:3px solid var(--secondary);
+  border-radius:6px;
+  text-shadow:0 0 24px rgba(255,255,255,0.15);
+}
+.motto::before{content:"\201C";position:absolute;left:6px;top:-2px;font-size:28px;opacity:0.4;color:var(--secondary);font-family:Georgia,serif;}
+.motto::after{content:"\201D";position:absolute;right:6px;bottom:-14px;font-size:28px;opacity:0.4;color:var(--secondary);font-family:Georgia,serif;}
+body.away-light .motto{
+  background:linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.02));
+  border-left-color:var(--secondary);
+  border-right-color:var(--secondary);
+  text-shadow:none;
+  color:var(--secondary) !important;
+}
 </style>
 </head>
 <body>
@@ -128,7 +156,7 @@ body.away-light .row-table tr.pos-row[data-pos="D/ST"] td{color:#AD1457 !importa
   <img class="logo-img" src="../../logos/alacrity-and-abandon.png" alt="Alacrity and Abandon">
   <div class="kicker">Dodge City &mdash; TEAM PAGE</div>
   <h1>Alacrity and Abandon</h1>
-<p class="motto">&ldquo;We Will Find a Way or Make One!&rdquo;</p>  <div class="edition">East Division &middot; Owner: ESPNFAN3965630907</div>
+<p class="motto">We Will Find a Way or Make One!</p>  <div class="edition">East Division &middot; Owner: ESPNFAN3965630907</div>
 </header>
 
 <section class="block">
