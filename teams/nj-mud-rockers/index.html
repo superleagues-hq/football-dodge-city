@@ -61,6 +61,29 @@ section.block{padding:8px 20px 22px;}
   .section-title{font-size:17px;}
   .stat-box .value{font-size:18px;}
 }
+
+body.away-light{--bg-dark:#F5F5F5;--bg:#FFFFFF;--text:#111111;--line:rgba(0,0,0,0.1);}
+body.away-light .wrap{background:#FFFFFF;color:#111111;}
+body.away-light .navstrip{background:#FFFFFF;border-bottom:1px solid rgba(0,0,0,0.1);}
+body.away-light .navstrip a,body.away-light .navstrip button{color:#111111;}
+body.away-light .navstrip a.disabled,body.away-light .navstrip button.disabled{color:rgba(0,0,0,0.25);}
+body.away-light h1{color:#111111;}
+body.away-light .kicker{color:var(--secondary);}
+body.away-light .motto{color:rgba(0,0,0,0.7);}
+body.away-light .edition{color:rgba(0,0,0,0.6);}
+body.away-light .section-title{color:var(--secondary);}
+body.away-light .card{background:rgba(0,0,0,0.04);}
+body.away-light .card p{color:rgba(0,0,0,0.85);}
+body.away-light .stat-box{background:rgba(0,0,0,0.04);}
+body.away-light .stat-box .label{color:rgba(0,0,0,0.55);}
+body.away-light .stat-box .value{color:#111111;}
+body.away-light .row-table th{color:rgba(0,0,0,0.55);border-bottom-color:rgba(0,0,0,0.12);}
+body.away-light .row-table td{color:#111111;border-bottom-color:rgba(0,0,0,0.06);}
+body.away-light .roster-row{background:rgba(0,0,0,0.04);color:#111111;}
+body.away-light .roster-row .pts{color:rgba(0,0,0,0.7);}
+body.away-light .empty{color:rgba(0,0,0,0.45);}
+body.away-light .hub-link a{color:rgba(0,0,0,0.65);}
+
 </style>
 </head>
 <body>
@@ -141,92 +164,92 @@ section.block{padding:8px 20px 22px;}
       <tr>
         <td>2</td>
         <td>NFL Fantasy Football God</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>3</td>
         <td>Team HOOK</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>4</td>
         <td>CD nutz</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>5</td>
         <td>&#34;You play to win the game&#34;</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>6</td>
         <td>Ladd Zeppelin</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>7</td>
         <td>Griddy Gang </td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>8</td>
         <td>Sun Warriors</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>9</td>
         <td>Team Booger&#39;sFingers</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>10</td>
         <td>Team THE G.O.A.T</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>11</td>
         <td>Hopatcong Warriors</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>12</td>
         <td>Evans Island 🏝️</td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>13</td>
         <td>MadCity </td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
       <tr>
         <td>14</td>
         <td>Bird Gang </td>
-        <td class="num">0.0</td>
-        <td class="num">0.0</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
         <td class="">—</td>
       </tr>
     </tbody>
@@ -255,6 +278,7 @@ function toggleColors() {
   const r = document.documentElement.style;
   r.setProperty("--primary", c.primary);
   r.setProperty("--secondary", c.secondary);
+  document.body.classList.toggle("away-light", isAway);
   document.getElementById("toggleLabel").textContent = isAway ? "View: Home" : "View: Away";
 }
 </script>
