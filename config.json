@@ -9,82 +9,98 @@
     {
       "name": "Griddy Gang ",
       "slug": "griddy-gang",
-      "owner": "espn22700673"
+      "owner": "espn22700673",
+      "logo": "dc1.png"
     },
     {
       "name": "Hopatcong Warriors",
       "slug": "hopatcong-warriors",
-      "owner": "jon_a_evans"
+      "owner": "jon_a_evans",
+      "logo": "dc2.png"
     },
     {
       "name": "\"You play to win the game\"",
       "slug": "you-play-to-win-the-game",
-      "owner": "CSallie"
+      "owner": "CSallie",
+      "logo": "dc3.png"
     },
     {
       "name": "Alacrity and Abandon",
       "slug": "alacrity-and-abandon",
-      "owner": "ESPNFAN3965630907"
+      "owner": "ESPNFAN3965630907",
+      "logo": "dc4.png"
     },
     {
       "name": "All Gas No Brake",
       "slug": "all-gas-no-brake",
-      "owner": "ESPNFAN5258591030"
+      "owner": "ESPNFAN5258591030",
+      "logo": "dc5.png"
     },
     {
       "name": "Team Booger'sFingers",
       "slug": "team-boogersfingers",
-      "owner": "tinman7311701"
+      "owner": "tinman7311701",
+      "logo": "dc6.png"
     },
     {
       "name": "Ladd Zeppelin",
       "slug": "ladd-zeppelin",
-      "owner": "Fantasy2006"
+      "owner": "Fantasy2006",
+      "logo": "dc1.png"
     },
     {
       "name": "MadCity ",
       "slug": "madcity",
-      "owner": "ESPNFAN9440665251"
+      "owner": "ESPNFAN9440665251",
+      "logo": "dc2.png"
     },
     {
       "name": "Team HOOK",
       "slug": "team-hook",
-      "owner": "Shagens23"
+      "owner": "Shagens23",
+      "logo": "dc3.png"
     },
     {
       "name": "NFL Fantasy Football God",
       "slug": "nfl-fantasy-football-god",
-      "owner": "ESPNFAN8106142773"
+      "owner": "ESPNFAN8106142773",
+      "logo": "dc4.png"
     },
     {
       "name": "Bird Gang ",
       "slug": "bird-gang",
-      "owner": "ESPNFAN3994919101"
+      "owner": "ESPNFAN3994919101",
+      "logo": "dc5.png"
     },
     {
       "name": "NJ Mud Rockers",
       "slug": "nj-mud-rockers",
-      "owner": "MrZee456"
+      "owner": "MrZee456",
+      "logo": "dc6.png"
     },
     {
       "name": "Team THE G.O.A.T",
       "slug": "team-the-goat",
-      "owner": "42SPENCER23"
+      "owner": "42SPENCER23",
+      "logo": "dc1.png"
     },
     {
       "name": "CD nutz",
       "slug": "cd-nutz",
-      "owner": "jspence2313"
+      "owner": "jspence2313",
+      "logo": "dc2.png"
     },
     {
       "name": "Sun Warriors",
       "slug": "sun-warriors",
-      "owner": "DODGER2332"
+      "owner": "DODGER2332",
+      "logo": "dc3.png"
     },
     {
       "name": "Evans Island \ud83c\udfdd\ufe0f",
       "slug": "evans-island",
-      "owner": "ESPNFAN0962824239"
+      "owner": "ESPNFAN0962824239",
+      "logo": "dc4.png"
     }
   ]
 }
