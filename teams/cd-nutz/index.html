@@ -113,32 +113,55 @@ body.away-light .row-table tr.pos-row[data-pos="K"] td{color:#6A1B9A !important;
 body.away-light .row-table tr.pos-row[data-pos="D/ST"] td{color:#AD1457 !important;}
 /* DC OVERRIDE END */
 
-.motto{
-  font-family:'Oswald',sans-serif;
-  font-style:italic;
-  font-weight:700;
-  font-size:clamp(15px,4.2vw,18px);
-  letter-spacing:0.03em;
-  color:var(--secondary);
-  margin:16px auto 0;
-  max-width:420px;
-  padding:12px 20px;
-  line-height:1.35;
-  position:relative;
-  background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  border-left:3px solid var(--secondary);
-  border-right:3px solid var(--secondary);
-  border-radius:6px;
-  text-shadow:0 0 24px rgba(255,255,255,0.15);
+
+
+
+body.away-light 
+
+.motto {
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(15px, 4vw, 18px);
+  letter-spacing: 0.03em;
+  color: var(--secondary);
+  margin: 16px auto 0;
+  max-width: 420px;
+  padding: 14px 24px;
+  line-height: 1.35;
+  position: relative;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border-top: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+  border-radius: 6px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
-.motto::before{content:"\201C";position:absolute;left:6px;top:-2px;font-size:28px;opacity:0.4;color:var(--secondary);font-family:Georgia,serif;}
-.motto::after{content:"\201D";position:absolute;right:6px;bottom:-14px;font-size:28px;opacity:0.4;color:var(--secondary);font-family:Georgia,serif;}
-body.away-light .motto{
-  background:linear-gradient(135deg, rgba(0,0,0,0.05), rgba(0,0,0,0.02));
-  border-left-color:var(--secondary);
-  border-right-color:var(--secondary);
-  text-shadow:none;
-  color:var(--secondary) !important;
+.motto::before {
+  content: "\201C";
+  position: absolute;
+  left: 8px;
+  top: -2px;
+  font-size: 32px;
+  opacity: 0.35;
+  color: var(--secondary);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+.motto::after {
+  content: "\201D";
+  position: absolute;
+  right: 8px;
+  bottom: -12px;
+  font-size: 32px;
+  opacity: 0.35;
+  color: var(--secondary);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+body.away-light .motto {
+  background: linear-gradient(135deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+  color: var(--secondary) !important;
+  text-shadow: none;
 }
 </style>
 </head>
