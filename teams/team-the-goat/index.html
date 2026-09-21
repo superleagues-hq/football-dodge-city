@@ -84,6 +84,23 @@ body.away-light .roster-row .pts{color:rgba(0,0,0,0.7);}
 body.away-light .empty{color:rgba(0,0,0,0.45);}
 body.away-light .hub-link a{color:rgba(0,0,0,0.65);}
 
+
+.row-table th.num{text-align:right;}
+body.away-light{background:#F5F5F5 !important;color:#111111;}
+body.away-light .wrap{background:#FFFFFF !important;}
+.pos-row[data-pos="QB"]{color:#FF6B6B;}
+.pos-row[data-pos="RB"]{color:#4A9EFF;}
+.pos-row[data-pos="WR"]{color:#4ADE80;}
+.pos-row[data-pos="TE"]{color:#FBBF24;}
+.pos-row[data-pos="K"]{color:#A78BFA;}
+.pos-row[data-pos="D/ST"]{color:#F472B6;}
+body.away-light .pos-row[data-pos="QB"]{color:#C62828;}
+body.away-light .pos-row[data-pos="RB"]{color:#1565C0;}
+body.away-light .pos-row[data-pos="WR"]{color:#2E7D32;}
+body.away-light .pos-row[data-pos="TE"]{color:#B8860B;}
+body.away-light .pos-row[data-pos="K"]{color:#6A1B9A;}
+body.away-light .pos-row[data-pos="D/ST"]{color:#AD1457;}
+
 </style>
 </head>
 <body>
@@ -263,63 +280,63 @@ body.away-light .hub-link a{color:rgba(0,0,0,0.65);}
   <table class="row-table">
     <thead><tr><th>Slot</th><th>Player</th><th>Team</th><th class="num">Last Wk</th><th class="num">Season</th></tr></thead>
     <tbody>
-      <tr>
+      <tr class="pos-row" data-pos="QB">
         <td>QB</td>
         <td>Bo Nix</td>
         <td>DEN</td>
         <td class="num">50.0</td>
         <td class="num">84.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="RB">
         <td>RB</td>
         <td>Bijan Robinson</td>
         <td>ATL</td>
         <td class="num">10.0</td>
         <td class="num">43.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="RB">
         <td>RB</td>
         <td>Kyren Williams</td>
         <td>LAR</td>
         <td class="num">15.0</td>
         <td class="num">15.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="WR">
         <td>WR</td>
         <td>Jalen Coker</td>
         <td>CAR</td>
         <td class="num">19.0</td>
         <td class="num">62.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="WR">
         <td>WR</td>
         <td>Rashee Rice</td>
         <td>KC</td>
         <td class="num">13.0</td>
         <td class="num">23.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="TE">
         <td>TE</td>
         <td>Colston Loveland</td>
         <td>CHI</td>
         <td class="num">1.0</td>
         <td class="num">2.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="WR">
         <td>FLEX</td>
         <td>Carnell Tate</td>
         <td>TEN</td>
         <td class="num">5.0</td>
         <td class="num">12.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="D/ST">
         <td>D/ST</td>
         <td>Chiefs D/ST</td>
         <td>KC</td>
         <td class="num">18.0</td>
         <td class="num">41.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="K">
         <td>K</td>
         <td>Jason Myers</td>
         <td>SEA</td>
@@ -333,56 +350,56 @@ body.away-light .hub-link a{color:rgba(0,0,0,0.65);}
   <table class="row-table">
     <thead><tr><th>Pos</th><th>Player</th><th>Team</th><th class="num">Last Wk</th><th class="num">Season</th></tr></thead>
     <tbody>
-      <tr>
+      <tr class="pos-row" data-pos="QB">
         <td>QB</td>
         <td>Jacoby Brissett</td>
         <td>ARI</td>
         <td class="num">28.0</td>
         <td class="num">85.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="RB">
         <td>RB</td>
         <td>Emmett Johnson</td>
         <td>KC</td>
         <td class="num">9.0</td>
         <td class="num">18.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="RB">
         <td>RB</td>
         <td>Jordan Mason</td>
         <td>MIN</td>
         <td class="num">0.0</td>
         <td class="num">12.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="RB">
         <td>RB</td>
         <td>Tyler Allgeier</td>
         <td>ARI</td>
         <td class="num">3.0</td>
         <td class="num">12.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="TE">
         <td>TE</td>
         <td>Gunnar Helm</td>
         <td>TEN</td>
         <td class="num">3.0</td>
         <td class="num">9.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="WR">
         <td>WR</td>
         <td>Kayshon Boutte</td>
         <td>HOU</td>
         <td class="num">6.0</td>
         <td class="num">9.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="WR">
         <td>WR</td>
         <td>Jordan Addison</td>
         <td>MIN</td>
         <td class="num">5.0</td>
         <td class="num">6.0</td>
       </tr>
-      <tr>
+      <tr class="pos-row" data-pos="WR">
         <td>WR</td>
         <td>Malachi Fields</td>
         <td>NYG</td>
