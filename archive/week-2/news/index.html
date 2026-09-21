@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dodge City — League News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F8;--card:#FFFFFF;--border:#E5E7EB;--navy:#0B2265;--red:#C8102E;--text:#1A1A1A;--mid:#4B5563;--light:#9CA3AF;--gold:#C9A227;--shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.04);}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',Arial,sans-serif;padding:24px 16px 60px;}
+.page{max-width:900px;margin:0 auto;}
+.back{display:inline-block;padding:10px 18px;background:var(--navy);color:#fff;text-decoration:none;border-radius:6px;font-weight:600;font-size:14px;margin-bottom:20px;}
+.masthead{text-align:center;padding:32px 16px 24px;background:#FFF;border-radius:12px;box-shadow:var(--shadow);margin-bottom:20px;border-top:6px solid var(--navy);border-bottom:1px solid var(--border);}
+.masthead .rule{width:80px;height:4px;background:var(--red);margin:0 auto 14px;}
+.masthead .kicker{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:0.3em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:8px;}
+.masthead h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,5vw,42px);font-weight:900;color:var(--navy);margin:0 0 10px;line-height:1.1;}
+.masthead .tagline{font-family:'Oswald',sans-serif;font-size:14px;color:var(--mid);letter-spacing:0.08em;text-transform:uppercase;}
+.card{background:var(--card);border-radius:12px;padding:24px;box-shadow:var(--shadow);margin-bottom:20px;border:1px solid var(--border);}
+.card h2{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:700;color:var(--navy);margin:0 0 18px;padding-bottom:10px;border-bottom:2px solid var(--red);}
+.card h3{font-family:'Oswald',sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:0.08em;color:var(--red);margin:0 0 10px;}
+.headline{background:linear-gradient(135deg,#0B2265,#1e3a8a);color:#fff;border:none;padding:30px 26px;}
+.headline h2{color:#fff;border-bottom-color:var(--gold);font-size:26px;margin-bottom:12px;}
+.headline p{font-size:16px;line-height:1.6;margin:0;color:rgba(255,255,255,0.92);}
+.tier{margin-bottom:16px;}
+.tier-label{font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--navy);margin:12px 0 8px;}
+.team-row{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:8px;background:#FAFAFB;margin-bottom:6px;font-size:14px;}
+.team-row .rank{font-family:'Oswald',sans-serif;font-weight:700;color:var(--red);min-width:32px;}
+.team-row img{height:30px;width:30px;object-fit:contain;}
+.team-row a{color:var(--navy);text-decoration:none;font-weight:600;flex:1;}
+.team-row a:hover{color:var(--red);}
+.team-row .record{color:var(--mid);font-variant-numeric:tabular-nums;font-weight:600;}
+.numbers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
+.number-box{background:#FAFAFB;border-radius:8px;padding:14px 16px;border-left:3px solid var(--red);}
+.number-box .label{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--mid);margin-bottom:4px;font-weight:600;}
+.number-box .value{font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;color:var(--navy);}
+.number-box .sub{font-size:12px;color:var(--mid);margin-top:2px;}
+.bulletin{background:#FAFAFB;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid var(--gold);}
+.bulletin .from{font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:0.06em;}
+.bulletin .to{font-size:12px;color:var(--mid);margin-bottom:6px;}
+.bulletin .msg{font-style:italic;font-size:14px;color:var(--text);}
+.quote-row{padding:12px 16px;background:#FAFAFB;border-radius:8px;margin-bottom:8px;font-size:14px;line-height:1.5;border-left:3px solid var(--navy);}
+.quote-row .who{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.06em;color:var(--navy);display:block;margin-bottom:4px;}
+.quote-row .text{color:var(--text);}
+.empty{color:var(--light);font-style:italic;font-size:14px;padding:8px 4px;}
+@media (max-width:600px){
+  .card{padding:18px;}
+  .card h2{font-size:19px;}
+  .headline{padding:22px 18px;}
+  .headline h2{font-size:21px;}
+  .headline p{font-size:15px;}
+  .masthead{padding:24px 14px 18px;}
+  .numbers-grid{grid-template-columns:1fr;}
+  .team-row{padding:8px 10px;font-size:13px;}
+}
+
+.sl-nav{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:0 0 20px;padding:0;}
+.sl-nav a{display:inline-block;padding:9px 18px;background:#FFF;color:#0B2265;text-decoration:none;font-family:'Oswald',Arial,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border-radius:6px;border:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.04);transition:all 0.15s;}
+.sl-nav a:hover{background:#0B2265;color:#FFF;border-color:#0B2265;}
+.sl-nav a.active{background:#C8102E;color:#FFF;border-color:#C8102E;}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:9999;background:#C9A227;color:#000;padding:10px 16px;text-align:center;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.05em;">&#128197; VIEWING WEEK 2 ARCHIVE &middot; <a href="/football-dodge-city/" style="color:#000;text-decoration:underline;">GO TO CURRENT WEEK &rarr;</a></div>
+
+<div class="page">
+<nav class="sl-nav">
+  <a href="../index.html">HOME</a>
+  <a href="./" class="active">NEWS</a>
+  <a href="../teams.html">STANDINGS</a>
+  <a href="../playoffs.html">PLAYOFFS</a>
+  <a href="../archive/">ARCHIVE</a>
+</nav>
+
+
+<header class="masthead">
+  <div class="rule"></div>
+  <div class="kicker">The SuperLeagues Times</div>
+  <h1>Dodge City</h1>
+  <div class="tagline">Week 2 Edition &middot; September 21, 2026</div>
+</header>
+
+<div class="card headline">
+  <h2>Griddy Gang  Sits Atop the Table</h2>
+  <p>Griddy Gang  leads the way with a 1-0-0 record heading into Week 2.</p>
+</div>
+
+<div class="card">
+  <h2>&#127942; Power Rankings</h2>
+  <div class="tier">
+    <div class="tier-label">Championship Contenders</div>
+    <div class="team-row">
+      <span class="rank">#1</span>
+      <img src="logos/griddy-gang.svg" alt="">
+      <a href="teams/griddy-gang/index.html">Griddy Gang </a>
+      <span class="record">1-0-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#2</span>
+      <img src="logos/hopatcong-warriors.jpg" alt="">
+      <a href="teams/hopatcong-warriors/index.html">Hopatcong Warriors</a>
+      <span class="record">1-0-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#3</span>
+      <img src="logos/you-play-to-win-the-game.svg" alt="">
+      <a href="teams/you-play-to-win-the-game/index.html">&#34;You play to win the game&#34;</a>
+      <span class="record">1-0-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#4</span>
+      <img src="logos/alacrity-and-abandon.png" alt="">
+      <a href="teams/alacrity-and-abandon/index.html">Alacrity and Abandon</a>
+      <span class="record">1-0-0</span>
+    </div>
+  </div>
+  <div class="tier">
+    <div class="tier-label">Playoff Bound</div>
+    <div class="team-row">
+      <span class="rank">#5</span>
+      <img src="logos/all-gas-no-brake.svg" alt="">
+      <a href="teams/all-gas-no-brake/index.html">All Gas No Brake</a>
+      <span class="record">1-0-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#6</span>
+      <img src="logos/team-boogersfingers.svg" alt="">
+      <a href="teams/team-boogersfingers/index.html">Team Booger&#39;sFingers</a>
+      <span class="record">1-0-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#7</span>
+      <img src="logos/ladd-zeppelin.svg" alt="">
+      <a href="teams/ladd-zeppelin/index.html">Ladd Zeppelin</a>
+      <span class="record">1-0-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#8</span>
+      <img src="logos/madcity.svg" alt="">
+      <a href="teams/madcity/index.html">MadCity </a>
+      <span class="record">1-0-0</span>
+    </div>
+  </div>
+  <div class="tier">
+    <div class="tier-label">On the Bubble</div>
+    <div class="team-row">
+      <span class="rank">#9</span>
+      <img src="logos/team-hook.jpeg" alt="">
+      <a href="teams/team-hook/index.html">Team HOOK</a>
+      <span class="record">0-1-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#10</span>
+      <img src="logos/nfl-fantasy-football-god.png" alt="">
+      <a href="teams/nfl-fantasy-football-god/index.html">NFL Fantasy Football God</a>
+      <span class="record">0-1-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#11</span>
+      <img src="logos/bird-gang.svg" alt="">
+      <a href="teams/bird-gang/index.html">Bird Gang </a>
+      <span class="record">0-1-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#12</span>
+      <img src="logos/nj-mud-rockers.svg" alt="">
+      <a href="teams/nj-mud-rockers/index.html">NJ Mud Rockers</a>
+      <span class="record">0-1-0</span>
+    </div>
+  </div>
+  <div class="tier">
+    <div class="tier-label">Rebuild Year</div>
+    <div class="team-row">
+      <span class="rank">#13</span>
+      <img src="logos/team-the-goat.svg" alt="">
+      <a href="teams/team-the-goat/index.html">Team THE G.O.A.T</a>
+      <span class="record">0-1-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#14</span>
+      <img src="logos/cd-nutz.svg" alt="">
+      <a href="teams/cd-nutz/index.html">CD nutz</a>
+      <span class="record">0-1-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#15</span>
+      <img src="logos/sun-warriors.jpg" alt="">
+      <a href="teams/sun-warriors/index.html">Sun Warriors</a>
+      <span class="record">0-1-0</span>
+    </div>
+    <div class="team-row">
+      <span class="rank">#16</span>
+      <img src="logos/evans-island.jpg" alt="">
+      <a href="teams/evans-island/index.html">Evans Island 🏝️</a>
+      <span class="record">0-1-0</span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>&#127919; This Week in Numbers</h2>
+  <div class="numbers-grid">
+  </div>
+</div>
+
+<div class="card">
+  <h2>&#129689; Bulletin Board</h2>
+  <div class="empty">No bulletin board posts this week yet.</div>
+</div>
+
+<div class="card">
+  <h2>&#128172; Smack Talk Highlights</h2>
+  <div class="empty">No smack talk submitted this week.</div>
+</div>
+
+<div class="card">
+  <h2>&#128128; Bad Beats</h2>
+  <div class="empty">No bad beats submitted this week.</div>
+</div>
+
+<div class="card">
+  <h2>&#128587; Put Me In Coach</h2>
+  <div class="empty">No coach regrets submitted this week.</div>
+</div>
+
+<div class="card">
+  <h2>&#128176; Big Wins</h2>
+  <div class="empty">No big wins submitted this week.</div>
+</div>
+
+<div style="text-align:center;padding:20px;">
+  <img src="logos/superleagues-logo.png" alt="SuperLeagues" style="height:40px;opacity:0.9;">
+  <div style="font-size:11px;letter-spacing:0.08em;color:rgba(0,0,0,0.4);margin-top:6px;">BROUGHT TO YOU BY SUPERLEAGUES</div>
+</div>
+</div>
+</body>
+</html>
